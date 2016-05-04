@@ -1,24 +1,25 @@
-(document).ready(function() {
-    $(".navbar a, footer a[href='#tf-home']").on('click', function(event) {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function() {
-        window.location.hash = hash;
+ $(document).ready(function() {
+      $(document).on('click', 'a[href*="#"]', function() {
+        var slashedHash = '#/' + this.hash.slice(1);
+        if ( this.hash ) {
+          if ( slashedHash === location.hash ) {
+            $.smoothScroll({scrollTarget: this.hash});
+          } else {
+            $.bbq.pushState(slashedHash);
+          }
+          return false;
+        }
       });
-        });
+      $(window).bind('hashchange', function(event) {
+        var tgt = location.hash.replace(/^#\/?/,'');
+        if ( document.getElementById(tgt) ) {
+          $.smoothScroll({scrollTarget: '#' + tgt});
+        }
+      });
+      $(window).trigger('hashchange');
     });
-$(window).scroll(function() {
-$(".slideanim").each(function(){
-    var pos = $(this).offset().top;
 
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
-      $(this).addClass("slide");
-    }
-  });
-});
+
 
 (function($) {
 
