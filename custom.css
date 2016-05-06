@@ -6,8 +6,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background: #310404 url(http://web-sonick.zz.mu/images/sl/red_texture.jpg) repeat top left;
-    font-family: 'Electrolize';
+
 }
 
 
@@ -176,14 +175,9 @@ servive-block-aqua {
     border-bottom: 1px solid #03b0f0;
     padding: 0 0 2% 0;
     font-weight: bolder;
+
 }
 
-    @font-face {
-  font-family: 'Electrolize';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Electrolize'), local('Electrolize-Regular'), url(http://themes.googleusercontent.com/static/fonts/electrolize/v2/DDy9sgU2U7S4xAwH5thnJ4bN6UDyHWBl620a-IRfuBk.woff) format('woff');
-}
 
 
 
