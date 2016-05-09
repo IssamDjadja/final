@@ -6,10 +6,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    font:Lora;
-
+    font: Lora;
 }
-
 
 html {
     width: 100%;
@@ -139,8 +137,6 @@ i.icon-2x {
 /*Colored Content Boxes
 ------------------------------------*/
 
-
-
 #callout {
     background: #03b0f0 url(images/IMG4.jpg) no-repeat center fixed;
     background-size: cover;
@@ -148,71 +144,60 @@ i.icon-2x {
     border-bottom: 1px solid #03b0f0;
     padding: 0 0 2% 0;
     font-weight: bolder;
-    font-family:Montserrat;
-
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 19px;
 }
 
 #features {
-    margin-top:20px;
-}
-.feature, .feature i, .feature h3, .feature .title_border {
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;    
-}
-.feature {
-    background:#FFFFFF;
-    text-align:center;
-    padding:20px;
-    border: solid 1px #cccccc;
-}
-.feature p {
-    margin-top:20px;   
-    margin-bottom:30px;   
-}
-.feature i{
-    font-size:80px;
-    color:#FFFFFF;
-    background:#1E825F;
-    padding:30px;
-    border-radius:50%;
-    border: solid 3px #1E825F;
-}
-.feature h3 {
-    color:#1E825F;  
-}
-.feature:hover {
-    background:#F5F5F5;
-    -webkit-transform: translate(0,1em);
-    -moz-transform: translate(0,1em);
-    -o-transform: translate(0,1em);
-    -ms-transform: translate(0,1em);
-    transform: translate(0,1em);    
-}
-.feature:hover i{
-    color:#1E825F;
-    border-color:#1E825F;
-    background:#FFFFFF;
-}
-.feature:hover .title_border {
-    background-color:#1E825F;
-    width:50%;
-}
-.feature .title_border {
-    width: 0%;
-    height: 3px;
-    background:#1E825F;
-    margin: 0 auto;
-    margin-top: 12px;
-    margin-bottom: 8px;
+    margin-top: 20px;
 }
 
+.jumbotron-icon {
+    padding: 30px 0 25px;
+    background-color: #eee;
+    color: #222;
+    border-bottom-color: #d1d1d1;
+    border-top-color: #f7f7f7;
+    font-size: 40px;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+    line-height: 29px;
+}
 
+#op {
+     padding: 30px 0 25px;
+    background-color: #eea;
+    color: black;
+    height: auto;
+    font-size: 19px;
+    line-height: 39px;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+}
 
+#req {
+     padding: 30px 0 25px;
+    background-color: #9400D3;
+    font-size: 19px;
+    line-height: 29px;
+    margin: auto;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+}
 
-
-
-
-
-
+#title {
+     padding: 30px 0 25px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    color: yellow;
+    font-size: 17px;
+}
