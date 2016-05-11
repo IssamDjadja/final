@@ -2,11 +2,11 @@ body {
     width: 100%;
     height: 100%;
     color: #fff;
-    background-color: #000;
     margin: 0;
     padding: 0;
     text-align: center;
     font: Lora;
+    background: #03b0f0 url(images/IMG4.jpg) no-repeat center fixed;
 }
 
 html {
@@ -138,15 +138,14 @@ i.icon-2x {
 ------------------------------------*/
 
 #callout {
-    background: #03b0f0 url(images/IMG4.jpg) no-repeat center fixed;
     background-size: cover;
-    border-top: 1px solid #03b0f0;
-    border-bottom: 1px solid #03b0f0;
-    padding: 0 0 2% 0;
+    padding: 0 0 0% 0;
     font-weight: bolder;
     font-family: Montserrat;
     font-size: 17px;
     line-height: 19px;
+    height: auto;
+    margin:auto;
 }
 
 #features {
@@ -169,7 +168,7 @@ i.icon-2x {
 }
 
 #op {
-     padding: 30px 0 25px;
+    padding: 30px 0 25px;
     background-color: #eea;
     color: black;
     height: auto;
@@ -183,7 +182,7 @@ i.icon-2x {
 }
 
 #req {
-     padding: 30px 0 25px;
+    padding: 30px 0 25px;
     background-color: #9400D3;
     font-size: 19px;
     line-height: 29px;
@@ -196,14 +195,64 @@ i.icon-2x {
 }
 
 #title {
-     padding: 30px 0 25px;
+    padding: 30px 0 25px;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
     color: yellow;
     font-size: 17px;
 }
 
-#scratch{
-    background:url(imagesScratchcat.png);
-    width:30px;
-    height:30px;
+#btn:hover {
+    color: #f04e45;
+    border-color: #f04e45;
+    border-radius: 22px;
+    padding: .5em 1.2em;
+    background-color: yellow;
+    border: 1px solid;
+    transform: scale(.9);
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+#btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #f04e45;
+    color: white;
+    border-radius: 30px;
+    padding: 0.9em 2em;
+    margin-top: 1em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#left {
+    flex: 0 0 50%;
+    background: lightgreen;
+    padding: 30px 0 25px;
+    font-size: 19px;
+    line-height: 29px;
+    margin: auto;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+    color: purple;
+}
+
+#right {
+    flex: 1;
+    background: url(images/scode.jpg) no-repeat bottom center scroll;
 }
