@@ -107,6 +107,7 @@ html {
     margin: 0 auto;
     height: auto;
     padding-bottom: 20px;
+    animation-delay: 1s;
 }
 
 #Howtostartnow {
@@ -255,4 +256,15 @@ i.icon-2x {
 #right {
     flex: 1;
     background: url(images/scode.jpg) no-repeat bottom center scroll;
+}
+
+#down{
+ 
+    animation: glowing 1500ms infinite;
+}
+
+@keyframes glowing {
+  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
 }
