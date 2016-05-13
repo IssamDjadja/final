@@ -134,6 +134,11 @@ $(document).ready(function() {
 });
 })(jQuery);
 
-
+$(window).load(function(){
+ $('#where').find('img').each(function(){
+  var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
+  $(this).addClass(imgClass);
+ })
+})
 
 

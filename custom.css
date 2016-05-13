@@ -11,14 +11,8 @@ body {
 html {
     width: 100%;
     height: 100%;
-}
-
-@media(min-width:768px) {
-    p {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
-    }
+    font-size: 100%;
+    /* Base font-size of 16px */
 }
 
 .intro {
@@ -34,6 +28,7 @@ html {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    word-wrap: break-word
 }
 
 .intro .intro-body {
@@ -146,6 +141,7 @@ i.icon-2x {
     line-height: 19px;
     height: auto;
     margin: auto;
+    word-wrap: break-word
 }
 
 #features {
@@ -165,6 +161,7 @@ i.icon-2x {
     white-space: nowrap;
     width: auto;
     line-height: 29px;
+    word-wrap: break-word
 }
 
 #op {
@@ -179,13 +176,12 @@ i.icon-2x {
     overflow: hidden;
     white-space: nowrap;
     width: auto;
+    word-wrap: break-word
 }
 
 #req {
     padding: 30px 0 25px;
     background-color: #9400D3;
-    font-size: 19px;
-    line-height: 29px;
     margin: auto;
     display: block;
     text-overflow: ellipsis;
@@ -199,6 +195,7 @@ i.icon-2x {
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
     color: yellow;
     font-size: 17px;
+    word-wrap: break-word
 }
 
 #btn:hover {
@@ -252,40 +249,182 @@ i.icon-2x {
     color: purple;
 }
 
-#right {
-    flex: 1;
-    background: url(images/scode.jpg) no-repeat bottom center scroll;
+#down {
+    -webkit-animation: glowing 1500ms infinite;
 }
 
-#down {
-     -webkit-animation: glowing 1500ms infinite;
+#top {
+    background: url(images/scode1.jpg) no-repeat top fixed;
+    background-size: 100%;
+}
+
+#title {
+    font-size: 100%;
+}
+
+#where {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#where img.wide {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+#where img.tall {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+
+#text {
+    background-color: #9400D3;
+    padding: 30px 0 25px;
+    margin: auto;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+    font-size: 20px;
+}
+
+.overflow {
+    margin: 0 0 2em 0;
+    /**
+   * Required properties to achieve text-overflow
+   */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.footer-basic-centered {
+    background-color: #eea;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font: normal 18px Montserrat;
+    padding: 25px;
+    margin-top: 80px;
+    color: purple;
+}
+
+footer {
+    bottom: 0;
+}
+
+#head {
+    padding: 30px 0 25px;
+    color: yellow;
+    font-size: 2em;
+    word-wrap: break-word
 }
 
 @-webkit-keyframes glowing {
-  0% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
-  50% { background-color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+    0% {
+        background-color: #004A7F;
+        -webkit-box-shadow: 0 0 3px #004A7F;
+    }
+    50% {
+        background-color: #0094FF;
+        -webkit-box-shadow: 0 0 10px #0094FF;
+    }
+    100% {
+        background-color: #004A7F;
+        -webkit-box-shadow: 0 0 3px #004A7F;
+    }
 }
 
 @-moz-keyframes glowing {
-  0% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
-  50% { background-color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+    0% {
+        background-color: #004A7F;
+        -moz-box-shadow: 0 0 3px #004A7F;
+    }
+    50% {
+        background-color: #0094FF;
+        -moz-box-shadow: 0 0 10px #0094FF;
+    }
+    100% {
+        background-color: #004A7F;
+        -moz-box-shadow: 0 0 3px #004A7F;
+    }
 }
 
 @-o-keyframes glowing {
-  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
-  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+    0% {
+        background-color: #004A7F;
+        box-shadow: 0 0 3px #004A7F;
+    }
+    50% {
+        background-color: #0094FF;
+        box-shadow: 0 0 10px #0094FF;
+    }
+    100% {
+        background-color: #004A7F;
+        box-shadow: 0 0 3px #004A7F;
+    }
 }
 
 @keyframes glowing {
-  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
-  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+    0% {
+        background-color: #004A7F;
+        box-shadow: 0 0 3px #004A7F;
+    }
+    50% {
+        background-color: #0094FF;
+        box-shadow: 0 0 10px #0094FF;
+    }
+    100% {
+        background-color: #004A7F;
+        box-shadow: 0 0 3px #004A7F;
+    }
 }
 
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 200%;
+        /* Base font-size of 32px */
+    }
+}
 
-#Howtostartnow {
-    
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-width:400px) {
+    body {
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    body {
+        font-size: 120%;
+    }
+    .wrap {
+        max-width: 770px;
+    }
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+        word-wrap: break-word
+    }
 }
