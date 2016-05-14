@@ -6,7 +6,7 @@ body {
     text-align: center;
     background: #03b0f0 url(images/IMG4.jpg) no-repeat center fixed;
     font-size: 16px;
-    font-family: sans-serif;
+line-height: 39px;
 }
 
 html {
@@ -155,7 +155,7 @@ i.icon-2x {
     color: #222;
     border-bottom-color: #d1d1d1;
     border-top-color: #f7f7f7;
-    font-size: 19px;
+    font-size: 26px;
     display: block;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -170,7 +170,7 @@ i.icon-2x {
     background-color: #eea;
     color: black;
     height: auto;
-    font-size: 19px;
+    font-size: 26px;
     line-height: 39px;
     display: block;
     text-overflow: ellipsis;
@@ -196,6 +196,7 @@ i.icon-2x {
     width: auto;
     font-size: 26px;
     font-family: sans-serif;
+    line-height: 39px;
 }
 
 #book {
@@ -360,6 +361,9 @@ footer {
     font-size: 30px;
 }
 
+#ard{
+   background: url(images/ard.jpg) no-repeat center fixed;
+}
 @-webkit-keyframes glowing {
     0% {
         background-color: #004A7F;
@@ -458,19 +462,19 @@ footer {
 
 @media all and (min-width: 960px) {
     body{
-        font-size: 18px;
+        font-size: 20px;
     }
 }
  
 @media all and (max-width: 959px) and (min-width: 600px) {
     body{
-        font-size: 16px;
+        font-size: 20px;
     }
 }
  
 @media all and (max-width: 599px) and (min-width: 320px) {
     body{
-        font-size: 12px;
+        font-size: 20px;
     }
  
 }
